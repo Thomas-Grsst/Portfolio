@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Thomas GROSSAT</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+<!-- Navigation -->
+<nav id="navbar" class="fixed w-full bg-white shadow-lg z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Thomas GROSSAT</a>
+
+            <!-- Menu desktop -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#accueil" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Accueil</a>
+                <a href="#apropos" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">À propos</a>
+                <a href="#competences" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Compétences</a>
+                <a href="#projets" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Projets</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+
+            <!-- Menu mobile -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Menu mobile déroulant -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+            <a href="#accueil" class="block nav-link text-gray-600 hover:text-blue-600 transition-colors">Accueil</a>
+            <a href="#apropos" class="block nav-link text-gray-600 hover:text-blue-600 transition-colors">À propos</a>
+            <a href="#competences" class="block nav-link text-gray-600 hover:text-blue-600 transition-colors">Compétences</a>
+            <a href="#projets" class="block nav-link text-gray-600 hover:text-blue-600 transition-colors">Projets</a>
+            <a href="#contact" class="block nav-link text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Section Accueil -->
+<section id="accueil" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-20">
+    <div class="container mx-auto px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <img src="assets/images/profile.jpg" alt="Photo de profil" class="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white shadow-lg">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                Je suis <span class="text-blue-600">Thomas GROSSAT</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                Développeur Full Stack
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors transform hover:scale-105">
+                    Voir mes projets
+                </button>
+                <button class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors">
+                    Télécharger CV
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section À propos -->
+<section id="apropos" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">À propos de moi</h2>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mon parcours</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Passionné par le développement, je crée des petits projets personnelles utiles,
+                    et fonctionnelles. Mon expertise couvre le front-end et le back-end, avec une
+                    attention particulière pour l'IA
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    J'aime relever des défis techniques et transformer des idées innovantes en solutions
+                </p>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-calendar-alt text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">BTS SIO 2ème années</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-project-diagram text-blue-600 mr-3"></i>
+                        <span class="text-gray-700">4+ projets réalisés</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl">
+                <h4 class="text-xl font-semibold text-gray-800 mb-6">Informations personnelles</h4>
+                <div class="space-y-4">
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-gray-600">Email:</span>
+                        <span class="text-gray-800">thomasgrossat.pro@gmail.com</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-gray-600">Téléphone:</span>
+                        <span class="text-gray-800">+33 6 58 45 88 72</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-gray-600">Localisation:</span>
+                        <span class="text-gray-800">Trévoux, 01600, France</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-gray-600">Disponibilité:</span>
+                        <span class="text-green-600">Disponible</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Compétences -->
+<section id="competences" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Mes Compétences</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Compétence 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-code text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Développement Front-end</h3>
+                <p class="text-gray-600 mb-4">
+                    Création d'interfaces modernes et responsives avec les dernières technologies.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Laravel</span>
+                    <!--<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"></span>-->
+                </div>
+            </div>
+
+            <!-- Compétence 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-server text-green-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Développement Back-end</h3>
+                <p class="text-gray-600 mb-4">
+                    Construction de BDD
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <!--<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Node.js</span>-->
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Python</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Php</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                </div>
+            </div>
+
+            <!-- Compétence 3
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-paint-brush text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Design UI/UX</h3>
+                <p class="text-gray-600 mb-4">
+                    Conception d'interfaces utilisateur intuitives et d'expériences engageantes.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Figma</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Adobe XD</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Prototypage</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Wireframing</span>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Projets -->
+<section id="projets" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-16">Mes Projets</h2>
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <!-- Projet 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow project-card">
+                <img src="assets/images/trie_mail.jpg" alt="Projet 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Trieur de mail</h3>
+                    <p class="text-gray-600 mb-4">
+                        Site pour trié ses mails alimenté par ollama
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">HTML/CSS</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow project-card">
+                <img src="assets/images/site_fdp.jpg" alt="Projet 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Site Fils de Plante</h3>
+                    <p class="text-gray-600 mb-4">
+                        Projet BTS SIO. Guide sur les plantes du monde.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Javascript</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">HTML/CSS</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow project-card">
+                <img src="assets/images/site_volley.jpg" alt="Projet 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Site Volley</h3>
+                    <p class="text-gray-600 mb-4">
+                        Mini Projet BTS. Site concernant le volley.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">HTML/CSS</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Javascript</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Contactez-moi</h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-semibold mb-6">Parlons ensemble</h3>
+                <p class="text-gray-300 mb-8">
+                    Vous avez une question ? N'hésitez pas à me contacter. Je serais ravi
+                    d'échanger avec vous.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-blue-400 mr-4"></i>
+                        <span>thomasgrossat.pro@gmail.com</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-blue-400 mr-4"></i>
+                        <span>+33 6 58 45 88 72</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-blue-400 mr-4"></i>
+                        <span>Trévoux, 01600, France</span>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4 mt-8">
+                    <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <form id="contact-form" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-2">Nom</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="subject" class="block text-sm font-medium mb-2">Sujet</label>
+                    <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" required>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors" required></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    Envoyer le message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 Thomas GROSSAT. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>
